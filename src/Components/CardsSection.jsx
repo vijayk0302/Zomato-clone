@@ -37,10 +37,10 @@ const CardsSection = () => {
     return (
         <div className='w-full py-15 '>
             <div className='w-full flex flex-col  items-center justify-center '>
-                <img className='w-60' src={eternal} alt="" />
+                <img className='lg:w-60 md:w-45 sm:w-35 w-25' src={eternal} alt="" />
                 <div className='flex mt-5'>
                     <div className='h-0.5 w-28 mt-10 bg-linear-to-r from-transparent to-[#d2d2d2]'></div>
-                    <p className='text-center mt-4 text-2xl font-semibold text-[#596378]'>POWERING INDIA’S <br />
+                    <p className='text-center mt-4 text-sm sm:text-xl lg:text-2xl font-semibold text-[#596378]'>POWERING INDIA’S <br />
                         CHANGING LIFESTYLES</p>
                     <div className='h-0.5 w-28 mt-10 bg-linear-to-l from-transparent to-[#d2d2d2]'></div>
                 </div>
@@ -50,7 +50,7 @@ const CardsSection = () => {
                     card.map((item, i) => (
                         <div key={i} className={`${item.backgorund} rounded-4xl transition duration-300 hover:scale-110 p-10 w-65 border-3 ${item.border}`}>
                             <div className='w-full flex justify-center'>
-                                <img className={`rounded-4xl w-30`} src={item.img} alt="" />
+                                <img className={`rounded-4xl  w-30`} src={item.img} alt="" />
                             </div>
                             <p className='text-center text-gray-900 mt-4 font-bold text-lg'>{item.title}</p>
                             <p className='text-center text-gray-500 font-semibold'>{item.p}</p>

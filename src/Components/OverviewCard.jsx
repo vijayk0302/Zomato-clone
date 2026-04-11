@@ -13,7 +13,7 @@ const OverviewCard = () => {
             <p className='text-[#596378] font-medium sm:text-sm md:text-xl lg:text-lg'>restaurants</p>
           </div>
           <div className='flex justify-center'>
-            <img className='sm:w-10 lg:w-17' src={shop} alt="shop" />
+            <img className='sm:w-10 md:w-15 lg:w-17' src={shop} alt="shop" />
           </div>
         </div>
 
@@ -23,7 +23,7 @@ const OverviewCard = () => {
             <p className='text-[#596378] font-medium sm:text-sm md:text-xl lg:text-lg'>cities</p>
           </div>
           <div className='flex justify-center'>
-            <img className='lg:w-12 sm:w-5' src={loc} alt="location" />
+            <img className='lg:w-12 md:w-9 sm:w-5' src={loc} alt="location" />
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const OverviewCard = () => {
             </p>
           </div>
           <div className='flex justify-center'>
-            <img className='lg:w-18 sm:w-7' src={stand} alt="stand" />
+            <img className='lg:w-18 md:w-15 sm:w-7' src={stand} alt="stand" />
           </div>
         </div>
       </div>
