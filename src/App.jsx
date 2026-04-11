@@ -9,7 +9,8 @@ import Footer from './Components/Footer'
 
 const App = () => {
   return (
-    <>
+
+    <div className='overflow-hidden' >
       <Hero />
       <Overview/>
       <Feature/>
@@ -17,7 +18,7 @@ const App = () => {
       <CardsSection/>
       <QrcodeSection/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

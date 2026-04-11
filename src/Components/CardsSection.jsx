@@ -4,6 +4,7 @@ import blink from '../assets/images/blink.avif'
 import district from '../assets/images/district.avif'
 import hyperpure from '../assets/images/hyperpure.avif'
 import { FaCaretRight } from "react-icons/fa";
+import Slider from './Slider'
 
 const CardsSection = () => {
 
@@ -34,20 +35,20 @@ const CardsSection = () => {
     }]
 
     return (
-        <div className='w-full py-15 h-[120%]'>
+        <div className='w-full py-15 '>
             <div className='w-full flex flex-col  items-center justify-center '>
                 <img className='w-60' src={eternal} alt="" />
                 <div className='flex mt-5'>
-                    <div className='h-0.5 w-30 mt-10 bg-linear-to-r from-transparent to-[#d2d2d2]'></div>
+                    <div className='h-0.5 w-28 mt-10 bg-linear-to-r from-transparent to-[#d2d2d2]'></div>
                     <p className='text-center mt-4 text-2xl font-semibold text-[#596378]'>POWERING INDIA’S <br />
                         CHANGING LIFESTYLES</p>
-                    <div className='h-0.5 w-30 mt-10 bg-linear-to-l from-transparent to-[#d2d2d2]'></div>
+                    <div className='h-0.5 w-28 mt-10 bg-linear-to-l from-transparent to-[#d2d2d2]'></div>
                 </div>
             </div>
-            <div className='flex w-full justify-around mt-10'>
+            <div className='sm:flex w-full px-10 flex-wrap hidden gap-10 justify-around mt-10'>
                 {
                     card.map((item, i) => (
-                        <div key={i} className={`${item.backgorund} rounded-4xl transition duration-300 hover:scale-110 p-10 w-65 border-4 ${item.border}`}>
+                        <div key={i} className={`${item.backgorund} rounded-4xl transition duration-300 hover:scale-110 p-10 w-65 border-3 ${item.border}`}>
                             <div className='w-full flex justify-center'>
                                 <img className={`rounded-4xl w-30`} src={item.img} alt="" />
                             </div>
@@ -60,6 +61,9 @@ const CardsSection = () => {
                         </div>
                     ))
                 }
+            </div>
+            <div className='sm:hidden flex w-full justify-center  '>
+                <Slider/>
             </div>
         </div>
     )
